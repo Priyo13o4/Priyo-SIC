@@ -1,0 +1,105 @@
+
+
+
+-> Accumulator : Special Purpose register 
+-> Buffer : Primary purpose to move data from one place to another 
+	> Un-buffer (No delimiter): Data is sent immediately 
+	> Line buffer
+	> User customised Delimiters : The character that separates two values
+	
+	-> Recap about writing octal and hexadecimal numbers like 
+	0b10010 , 0xff, 0o78
+	
+Assignments 1: 
+	How is floating point number stored in memory ??? 1
+	Find out why there are no ++ and -- in python 
+	Check if a year is leap year
+	Check if a positive int is perfect square 
+	find smallest of 3 distinct numbers
+	Farmer problem 
+	taxation program
+
+-> *args means the function is capable of taking variable number of arguments 
+	it is a unmodifiable list , ie a tuple 
+
+----------------------------------------------------------------------------------------
+
+ARRAYS/LIST
+
+-> Wreapper , wrapes a primitive data type into an object ; in python wrapping is done default as python is completely OOP
+
+
+Accept A number from the user(4-digit number , where the digit can repeat atmost two times) and print the count of recursions required to arrive at Karpekar's constant.
+-> What is Karpekar's Constant 
+steps :
+1. take a 4 digit number : 6931
+2. Decreasing order : 9631
+3. Increasing Order : 1369 
+4. difference : 8262 
+	-> keep repeating : 8622 , 2268 : 6354
+						6543 , 3456 : 3087
+						8730 , 0378 : 8352
+						8532 , 2358 : 6174 
+						7641 , 1467 : 6174 ---- > Karpekar's Constant
+
+LIST METHODS 
+
+***FOCUS ALSO on the RETURN TYPE regardless the fucntion or language ***
+class list stores a set of fucntions utilized on lists, we call them as methods by an object
+
+	-sorted (function): 
+		Og list is not mutated , but created as a copy 
+	-sort (method): 
+		Og list will be mutated
+	-list.append(20)
+	-pop()
+	-list.insert(0,30)
+	-del list_name[0] #can be used to delete the whole list without the parameter
+	-list.empty()
+	-len(list)
+	-sum(list) # check the behaviour if theres a intermediate list
+	-min(list) #perform the above
+	-max(list)
+	-list.remove(element) , check if we can remove an element
+
+	EXECPTION : 
+
+->An exception is a runtime error which occurs when we are asking the code to do something not possible.
+		ex : opening a file which doesnt exist or is already open.
+	-we put the normal flow of execution inside a try block where we suspect an exception can occur
+	-Every exception has a class , an object of the exception is created , we reference it to the class, we catch that object in a except block.
+	-If a specific reference class is given , it will only catch that specific exception class in that except block.
+	-A generic exception block cant be before a specialized except block as the error will be unreachable as a named except clause cannot appear after catch-all except clause.
+
+->Inheritance is extending on a class which is a tested , proven solution to a problem to add on the desired features , which the existing soltuion lacks .
+	-We are either adding new features or creating a new soltuion to an existing problem, basically an increment without distrubing the existing solution.
+	-Reference of a child type cannot point to the object of the parent type ,The parent type can access all the properties of the child type,
+	But only those which were inhertited ie it cannot access the newly added properties of the child type.
+		ex : All SUVs are Cars but not all Cars are SUVs .
+
+-> Polymorphism 
+
+
+
+
+Assignments 2:
+	In python we have modules , inside them we can have sub modules or .py files.
+	Which modules are automatically loaded/imported by ptyhon interpreter ? 
+	In which Module does print(), input() ,len() fucntions come from.
+	Learn about function call stack , and how recursion work based on that.
+	Learn about errors / exception handlings in python
+
+	Find smallest and Biggest elements in a list of n numbers
+	Find the frequency an element in a list of n elements.
+	Remove the duplicates in a list of size n
+*** Given the number , find very next possible bigger number that has all the digits of the given number 
+	Accept A number from the user(4-digit number , where the digit can repeat atmost two times) and print the count of recursions required to arrive at Karpekar's constant.
+	Recursion Questions :
+    	-Find Factorial of a number 
+    	-Print N fibo terms with 1 and 2 as 1st 2 terms
+    	-Find sum of list elements 
+Implement Stack using list, insert and delete from rear of the list
+Implement Stack using list, insert and delete from front of the list
+Implement Queue using list, insert at rear delete from front the list
+Implement Queue using list, insert front, delete from rear of the list
+	--All having push pop display invalid and exit functions 
