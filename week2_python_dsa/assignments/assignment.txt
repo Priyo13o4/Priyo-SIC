@@ -1,0 +1,20 @@
+WEEK-2
+->What is pythonic and pep3
+->Name the ultimate parent class in python(And its important methods and data members)
+->What are the double underscore methods (functions)
+how to define explicityl the main fucntion in python
+
+->Take command line arguements (agvs)
+$ python program2.py "meghalaya shillong" "maniput imphal" "mizoram aizal" "tripura agartala" "nagaland kohima"
+use string methods , formatting 
+states = []
+capitals = []
+
+State  capital
+-------------- 
+
+In the linkedlist program :
+    make 8 fucntions for insert and delete at front , rear , postion , display f-r and r-f 
+    they made need checking if queue is empty (set that new node as head),if queue not empty 
+    for given postion we may need to check if that position exceeds the list or not 
+

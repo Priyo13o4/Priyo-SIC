@@ -1,0 +1,84 @@
+WEEK-3-OOPS
+What is Inheritance (An interviewers expected answer - Explain all this in brief in 2 mins for the question)
+->Inheritance is extending on a class which is a tested , proven solution to a problem to add on the desired features , which the existing soltuion lacks .
+	-We are either adding new features or creating a new soltuion to an existing problem, basically an increment without distrubing the existing solution.
+	-Reference of a child type cannot point to the object of the parent type ,The parent type can access all the properties of the child type,
+	But only those which were inhertited ie it cannot access the newly added properties of the child type.
+    ie It is a Implementation of is-a relationship.
+    (Parent features are there in child but reference of parent class cannot access the newly added features of the child class whcih are not there in parent class)
+    -When Inheriting , you inherite the whole SDLC and beyond too ,not just the code .
+    -Private features of the parent class are part of child class but they are not accessible .
+		ex : All SUVs are Cars but not all Cars are SUVs .
+
+-super : uplift or pass the values of overridden methods to parent , auto called by constructor 
+    we can call it for the parent class when we need to take control from child to the parent
+-parent object is intialized / constructed first
+***The parent most class is *OBJECT CLASS* for python and java alike.
+
+->What is Polymorphism 
+-There is no static Polymorphism or function overloading in python.
+(why - In python there is only runtime ,As there is no compile time and static polymorphision is only compile time binding, hence no fucntion overloading)
+
+->Abstraction
+
+
+->Encapsulation
+
+
+->When a function is called : 
+-Prologue : Passing control to the called fucntion by the callee
+-Business Logic : Algorithm employed to meet the business solution is executed by the function
+-Epilogue : Control goes back to the callee
+
+->Two types of data in any class : 
+-Instance data
+-Static data 
+
+->static member/data in a class : 
+    A shared member by all the classes, it is only a single copy accessible by every object.'
+
+*** ->Learn about memory management / mapping for python,its parts , whats and how much stored in those parts.
+
+--------------------------------------
+
+TREE : 
+-Tree is a non linear , acyclic (All paths are unique) DS
+-The Start/entry ppoint of a Tree is called as ROOT
+Synonym : Hierarchical DS
+- example : File system (Random Tree)
+
+
+BINARY TREE : 
+-It has at most two child nodes for every possible node in the tree.
+-The root node of the tree is set to be at a level 1.Thus its immediate is at level 2 and so on.
+-A node with no child nodes is said to be a LEAF NODE
+-Max possible level is said to be depth or height of the tree.
+-in a binary tree of a height n , we can have max of (2^n) - 1
+-*Traversal : To reach every node in the tree exactly once.
+-Traversal in a tree is when we move from the current node to of its immediate child node. We basically move away from the 50 % of the subtree of that previous node 
+(We are not uncovering the other child of the node which also containes subtrees)
+-A Tree with exactly or alomost 2n-1 nodes is said to be complete binary tree.
+-The 2 child nodes of a node in a binary tree arre said to be left child and right child.
+-The tree we can traverse starting from the left child node 
+-In a comolete binary tree (BT) every traversal will isolate or remove 50% of the search area
+-If in a BT every node has exactly zero or two child nodes only , then such BT is said to be strictly BT.
+***-If in a BT , the data is arrange in such way that day of the left child of every node is smaller than its own data (data of parent node) and data of the right child node is greater
+    that or equal to its own data , then such a BT is called as BINARY SEARCH TREE.
+-While traversing a BT when ever we reach a new node , it itself is considered as root and the notes that can be reached from it as nodes of the tree.
+    This to perform any operation on a BT, we always Traverse and while traversing (For trvaersal) we can apply the solution RECURSSIVELY.
+-If you traverse a binary tree in the order left-root-right then it is said to be In-Order Traversal,Similarly 
+    Root-left-right :  pre-order
+    Left-Right-Root :  post-order
+
+
+BINARY SEARCH TREE :
+
+-In a BST is the number of nodes is very small than 2n-1 (where N is tree height) then such a tree is said be imbalanced tree.
+    Conversly , balanced tree and perfectly balanced is complete BST or BBST.
+-The highest level in a tree is the height of the tree.
+-A new Node is always added into the BEST as a leaf node.
+
+Deleting a node in BST as these possibilities : 
+1. 0 child nodes
+2  1 child nodes
+3. 2 child nodes(Very complex)

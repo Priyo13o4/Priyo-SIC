@@ -1,0 +1,218 @@
+WEEK-2 
+->  -int num (variable,pointer(c++),stored in stack area)
+    -student.student (object,reference(java),stored in heap area)
+    -both are declarative statements
+    -both are created during runtime (memory alloc)
+->A frame is created for fucntions and even loops ,when the control block comes out of the block the frame is deleted to release memory.
+->***static binding , runtime binding in OOPS 
+->MongoDB is a inheritance of MySQL , so it also follows the rules of schemas but its not enforced strictly 
+->Closures are inner functions in python #Rarely used 
+->function pointers : Implicitly references are pointers in python 
+    -A pointer of a specific DT can point any variable of that DT
+    -A function pointer of a specific prototype(SIGNATURE) can point to any function of that prototype
+
+->The reasons for different languages : 
+    -Business and licensing
+    -
+
+Some VVIQs related to OOPS :
+    ->How is Inheritance implemented?
+        -Use extend keyword to get the features , We take the reference of parent class and point it to object of child class,
+        opposite is not possible.(More in previous notes)
+    ->Why a constructor cannot be final abstract and static ? 
+    ->Why main method in java should be public static and void.
+    ->Explain runtime polymorphism(Method overriding : first explain inheritance breifly).
+    ->What is collection and explain its use and memory mapping.
+        -Collection is a framework(An environemnt for easily,effeciently doing a job) , a pre defined class which is very generic(can store any type of object)
+        -Helps give a ready-made implementations for n classes.
+        -It includes all important operations liek adding , searching , deleting elements etc.
+        *More in depth sub questions on this
+
+------------------------------------------------------------------------------------------------------------------------
+
+LIST COMPREHENSION
+
+->List is a Datastructure in python
+    -list is pre defined , ordered , is a class and mutable
+
+->split() is a method in the str class ie it works only for string objects , its a delimiter (seperated by a new line)
+**[A delimiter is a character or sequence of characters used to separate individual pieces of data in a string or data stream.]**
+    -the parameter is default as space , but can be overwritten
+->A sort always receives a tuple as it has variable number of arguements
+->No index error in splicing
+->MAP method is equivalent to for each loop (ex:for element in list : )
+
+***->Benefit of slicing (strings/lists) : Merge sort
+
+
+Command Line Arguements(Avgs)
+ex python script.py ''arguments'' -> Avgs stack stores firstly thr script name then any other arguements 
+
+------------------------------------------------------------------------------------------------------------------------
+
+ANALYSIS AND DESIGN OF ALGORITHMS 
+
+->Practically we consider huge datasets so small iterations is considered only O(1)
+sorting methods :
+
+->Properties of big O : 
+    -find efficiency on input size
+    -it considers N to be very binding
+    -Its purpose is not to find exact efficiency rather to reveal the order in which the efficiency is.
+    -Usually used to find worst case efficiency (Whenever someone asks efficiency, we always say the worst case)
+->The best case efficiency of any sorting technique is big O(n)
+
+1.Linear Search :
+
+->To optimize Time efficiency we can use predictions ,ie geussing which half or part of the data your goal resides. ML algos approach.
+    Another way is multithreading[Processes running paralelly], we can divide the dataset into parts and run multiple searches in multiple parts.
+-----------------------------
+2.Binary Search :
+->mid , high and low
+->The searching grows logirthemic , so the big(O) is log(n)
+->Sorted input list is given
+->While or do-while loop is used
+
+->X : No. of iterations
+  n : No. of elements ; n , n/2 ,n/4,n/8.n/16 ,...,1
+                        2^x-1 , ........, 2^3,2^2,2^1,2^0
+    ====> n = 2^x-1 , n ~= 2^x
+                      x = log2(n)
+-----------------------------
+3.Bubble Sort :
+
+-> In this we start from any end of the list and compare consecutive elements.
+    Assuming we start from left and wish to sort in ascending order ,we swap the elements if the left element is bigger than the right one.
+    continue doing so upto the end of unsorted array and thus we got the biggest elementin the unsorted array in its final position.
+    Thus the element is taken from the unsorted array into the sorted array 
+->RUN : accessing all the elements in an array exactly once from one end of the array to the other.
+->In B.sort we bring the element into its final position in one run over the unsorted array.
+->B.sort doesnt predict anything beofre start of the sort algorithm nor it knows if the list is already sorted (ie after the 1st run).
+->The biggest element of the specific Run is moved to its final position. This is called as Bubbling the element to a corner.
+->While comparing the elements if we observe that there are no Swaps in a Run , then the list is sorted.
+->Thus we have a way to optimize the B.sort.Optimized B.sort has improved efficiency of O(n)
+
+->Algo :
+    Start from one end and move towards other 
+        compare consecutive elements
+    if left element is bigger than the right
+        swap the element
+-With each iteration of the run , the size of sorted list increases by one while the size of unsorted array decreases by one
+
+->Psuedocode :
+Assume input size to be N 
+for i from 1 to N-1 do :
+    for j from 1 to N-1-i do :
+        if list[j] > list[j+1] 
+            swap list[j] , list[j+1]
+-The outer loop runs through the list (accessing elements of the list exactly once)
+-The inner loop compares consecutive elements of the unsorted list
+
+Optimized B.sort : 
+for i from 1 to N-1 do :
+Assume the list is already sorted 
+    for j from 1 to N-1-i do :
+        if list[j] > list[j+1] 
+            swap list[j] , list[j+1]
+            sorted = False
+    if(sorted) :
+        break
+-Thus best case : (n)
+ and worst case : O(n^2)
+->The B.sort doesnt follow any specific mathematical formula/technique.Its solution is what we find on day to day basis.
+    Thus it has come from centuries of commonly used problem solving technique , said to come under brute force technique.
+->Number of comparisions in best case scenario for the Optimized B.sort is n-1 and and for B.sort is n(n-1)/2
+->The number of swaps in worst case scenario for both the Optimized and Unoptimized B.Sort is n(n-1)/2
+-----------------------------
+4.Selection Sort : 
+->Also a brute force technique.
+23   4    1    33    22   19   50    25
+i=1
+element  = 23  4   1
+position = 1   2   3
+After the loop has excited, swap the elements at positions position and i
+1   4    23    33    22   19   50    25
+i=2
+element  = 4 
+position = 2
+1   4    23    33    22   19   50    25
+i=3
+element  = 23  22  19 
+position = 3   5    6
+1  4  19  33  22  23  50  25
+
+In each iteration of i, we SELECT the ith smallest element and put in its final position.
+
+Thus, there are N-1 iterations for i
+And N-1-i comparisons in each iteration of i
+
+Assignment: Can we optimize Selection Sort the way we did with Bubble sort and thus bring the BCE of Selection sort from O(n2) to O(n)
+
+NOTE: We need not apply any sorting on the given array when (when we know the given array is already sorted)
+
+for i from 2 to N do:
+	element = list[i-1]
+	position = i-1
+	for j = i-1 to N do:
+		if list[j] < element then:
+			element = list[j]
+			position = j
+	swap list[position] with list[i-1]
+-----------------------------
+5.Quick Sort
+
+->Recursion is a drawback here , it lowers the efficiency by nature
+-----------------------------
+6.Insertion Sort 
+
+***->Optimistic sort , We start already with a sorted array and an unsorted array right after the input (one element array is always sorted)
+        [Take one element from the unsorted array , place it in the sorted array in right position by making place for it with shifting the elements in the sorted array to the right,
+        either till we get the right position or hit the boundary] ;
+        whereas in selection/bubble sort ,we have to complete one RUN first , only after that we can say its a partially sorted array.
+->for counting the number of shifts ,it is uncertain so we must use a while loop(we know the max[i shifts in total] and min[zero shifts] but not the in between) , 
+    and for iterating the unsorted array we may use a for loop.
+->Best case : O(n) [Ex : Almost zero shifts]
+  Worst case : 0(n^2) [Ex : Sorting in reverse order for a already sorted array-> We always insert a boundary (max shifts = i)]
+-> We should avoid this for LARGE amount of arrays , best for smaller size arrays. 
+    -THE BEST for somewhat sorted and small array.(Optimized B.sort can also be used in this case)
+-----------------------------   
+7.Merge Sort
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+MySQL(code : employee_CRUD)
+
+
+
+CRUD : 
+Create one row              post
+Read?retrieve one/all       get      (with id or without)
+Update                      put      (with id)
+deleted                     delete.  (with id) 
+
+OOPS(code : employee_CRUD_OOPS) 
+
+->In python , the constructor method or the function def __init__(self) is called when an object is to be created ,
+    while in java it is collected when the object is alredy created ( memory is already allocated)
+->We pass the reference of the object , Ex : 
+        update_emp(self) :
+            self.name = _____
+            self.designation = _____ etc etc 
+
+    e3.update_emp() ; inside () we are passing the e3 to update_emp(s) as s 
+->IF we dont do this referencing , the object will create its own copy of the code to run its fucntions, increasing the memory alloc
+
+LinkedList : 
+->List of linked node which contain data and link , linked lossely
+->Memory Leak : Loss of reference address but memory is still allocated for the data
+->Wild pointer : uninitialized pointer , gets a junk value. Solution : intialize as null pointer(points to no mem loc)
+->dangling pointer :
+->const pointer : Doesnt point to any other object other than the fixed one
+->pointer constant : we cant modify the value of the objec via the pointer
+->We create a binary tree using a doubly linked list , if we take care of arrangement : BST , take care of height : balanced BST
+    -BST ---> BBST ; complex algo used for this
+->A self balancing BST is called AVL tree
+->The look up of any linked list is always O(n), no optimization for this , so it fails for huge LL.
+

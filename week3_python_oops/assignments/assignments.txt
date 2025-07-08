@@ -1,0 +1,4 @@
+WEEK-3
+
+***1.Create a singleton class in python
+    -Singleton is a class to which only one object can be created
