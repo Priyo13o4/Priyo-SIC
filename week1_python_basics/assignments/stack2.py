@@ -1,21 +1,22 @@
 import sys as s
-def en_queue():
+def push() : 
     ele = input()
-    queue.insert(0,ele)
+    stack.insert(0,ele)
     print()
-    
-def de_queue () : 
-    if len(queue) == 0 :
-        print(' Queue is empty')
+
+def pop() : 
+    if len(stack) == 0 :
+        print("Stack is empty")
         return
-    print(f"The eleemnt {queue[-1]} is deleted")
-    del queue[-1]
-    
-def display_queue() : 
-    if len(queue) == 0 :
-        print(' Queue is empty')
+    else : 
+        del stack[0]
+
+def display() :
+    if len(stack) == 0 :
+        print("Stack is empty")
         return
-    print('Queue elements are :' , queue [::-1])
+    else : 
+        print(stack)
 
 def exit_program() :
     print("End of Program")
@@ -24,12 +25,13 @@ def exit_program() :
 def invalid_choice() :
     print("Invalid choice Number")
 
-queue = []
+stack =[]
+
 def menu(choice) :
     match(choice) :
-        case 1 : en_queue() 
-        case 2 : de_queue() 
-        case 3 : display_queue() 
+        case 1 : push() 
+        case 2 : pop() 
+        case 3 : display() 
         case 4 : exit_program ()
         case _: invalid_choice() #default case
 

@@ -1,4 +1,4 @@
-
+-> First rule of coding is simplicity even if its not efficient.
 
 
 -> Accumulator : Special Purpose register 
@@ -26,7 +26,7 @@ Assignments 1:
 
 ARRAYS/LIST
 
--> Wreapper , wrapes a primitive data type into an object ; in python wrapping is done default as python is completely OOP
+-> Wrapper , wrapes a primitive data type into an object ; in python wrapping is done default as python is completely OOP
 
 
 Accept A number from the user(4-digit number , where the digit can repeat atmost two times) and print the count of recursions required to arrive at Karpekar's constant.
@@ -75,7 +75,7 @@ class list stores a set of fucntions utilized on lists, we call them as methods 
 	-We are either adding new features or creating a new soltuion to an existing problem, basically an increment without distrubing the existing solution.
 	-Reference of a child type cannot point to the object of the parent type ,The parent type can access all the properties of the child type,
 	But only those which were inhertited ie it cannot access the newly added properties of the child type.
-		ex : All SUVs are Cars but not all Cars are SUVs .
+		ex : All SUVs are Cars but not all Cars are SUVs . (More on oops on week 3 notes)
 
 -> Polymorphism 
 
