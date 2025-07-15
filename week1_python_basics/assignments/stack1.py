@@ -1,3 +1,4 @@
+#Stack with insertion & deletion from bottom
 import sys as s 
 def push() :
     stack.append(input())

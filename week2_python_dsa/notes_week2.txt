@@ -5,15 +5,30 @@ WEEK-2
     -both are created during runtime (memory alloc)
 ->A frame is created for fucntions and even loops ,when the control block comes out of the block the frame is deleted to release memory.
 ->***static binding , runtime binding in OOPS 
-->MongoDB is a inheritance of MySQL , so it also follows the rules of schemas but its not enforced strictly 
-->Closures are inner functions in python #Rarely used 
-->function pointers : Implicitly references are pointers in python 
-    -A pointer of a specific DT can point any variable of that DT
-    -A function pointer of a specific prototype(SIGNATURE) can point to any function of that prototype
+->MongoDB is a inheritance of MySQL , so it also follows the rules of schemas but its not enforced strictly.
+
+->Closures :
+    -A closure is a function object that remembers values from its enclosing lexical scope, even if that scope is no longer active.  #Rarely used tho
+    -ie A closure is an inner function that uses variables from the outer function, and the inner function is returned and used outside, even after the outer function has finished executing.
+    -helps in encapsulation , callback handling , decorator implementations.
+    
+->Function pointers : 
+    -In Python, variables hold references to objects, not the actual data. 
+    -This behavior is conceptually similar to pointers, but Python does not expose or allow direct pointer manipulation like C/C++.
+    - C/C++, a pointer declared with a specific data type (e.g., int*) can hold the address of any variable of that same type.
+    -A function pointer of a specific prototype(SIGNATURE) can point to any function of that prototype.
+
+-> Garbage Collection :
+    -Object destruction is a crucial part of memory management. Without it, unused objects continue occupying memory, preventing the operating system from reallocating that memory to other processes.
+    -Languages like C and C++ do not have automatic garbage collection. In these languages, the programmer is responsible for explicitly deallocating memory using functions like free() in C or destructors in C++.
+        ( Note: In C++, object destruction is automatic for stack-allocated objects via destructors, but heap-allocated memory must still be manually managed using delete.)
+    -Languages like Java and Python include built-in garbage collection. This eliminates the need for manual memory deallocation. However, it may introduce additional runtime overhead, as the garbage collector must track and reclaim unused memory during program execution.
 
 ->The reasons for different languages : 
-    -Business and licensing
-    -
+    -Business and licensing.
+    -Different Use-Cases/Domains.
+    -Performance and Memory Models.
+    -Paradigms and Features
 
 Some VVIQs related to OOPS :
     ->How is Inheritance implemented?
@@ -208,10 +223,10 @@ LinkedList :
 ->List of linked node which contain data and link , linked lossely
 ->Memory Leak : Loss of reference address but memory is still allocated for the data
 ->Wild pointer : uninitialized pointer , gets a junk value. Solution : intialize as null pointer(points to no mem loc)
-->dangling pointer :
+->dangling pointer : a pointer that continues to reference a memory location after it has been deallocated or freed.
 ->const pointer : Doesnt point to any other object other than the fixed one
-->pointer constant : we cant modify the value of the objec via the pointer
-->We create a binary tree using a doubly linked list , if we take care of arrangement : BST , take care of height : balanced BST
+->pointer constant : we cant modify the value of the object via the pointer
+->We create a binary tree using a doubly linked list , if we take care of arrangement : BST ; if take care of height : balanced BST
     -BST ---> BBST ; complex algo used for this
 ->A self balancing BST is called AVL tree
 ->The look up of any linked list is always O(n), no optimization for this , so it fails for huge LL.

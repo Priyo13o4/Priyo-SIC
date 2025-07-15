@@ -58,9 +58,10 @@ BINARY TREE :
 -Traversal in a tree is when we move from the current node to of its immediate child node. We basically move away from the 50 % of the subtree of that previous node 
 (We are not uncovering the other child of the node which also containes subtrees)
 -A Tree with exactly or alomost 2n-1 nodes is said to be complete binary tree.
--The 2 child nodes of a node in a binary tree arre said to be left child and right child.
--The tree we can traverse starting from the left child node 
--In a comolete binary tree (BT) every traversal will isolate or remove 50% of the search area
+-The 2 child nodes of a node in a binary tree are said to be left child and right child.
+-The tree we can traverse starting from the left child node is said to be LEFT SUB-TREE and thus we can have Right Sub-Tree.
+-If in a BT every node has exactly Zero or Two child nodes only, then such a BT is said to be STRICTLY BT.
+-In a complete binary tree (BT) every traversal will isolate or remove 50% of the search area
 -If in a BT every node has exactly zero or two child nodes only , then such BT is said to be strictly BT.
 ***-If in a BT , the data is arrange in such way that day of the left child of every node is smaller than its own data (data of parent node) and data of the right child node is greater
     that or equal to its own data , then such a BT is called as BINARY SEARCH TREE.
@@ -72,8 +73,9 @@ BINARY TREE :
 
 
 BINARY SEARCH TREE :
-
--In a BST is the number of nodes is very small than 2n-1 (where N is tree height) then such a tree is said be imbalanced tree.
+-If in a BT, the data is ARRANGED in such way that data of the left child of every node is smaller than its own data (data of Parent node) and data of the right child node is greater than or equal to its own data, 
+    then such a BT is called as BINARY SEARCH TREE (BST).
+-In a BST if the number of nodes is very small than 2N-1 (where N is tree height) then such a tree is said be UNBALANCED TREE. Conversly balanced tree and perfectly balanced is COMPLETE BST or BBST.
     Conversly , balanced tree and perfectly balanced is complete BST or BBST.
 -The highest level in a tree is the height of the tree.
 -A new Node is always added into the BEST as a leaf node.
@@ -82,3 +84,37 @@ Deleting a node in BST as these possibilities :
 1. 0 child nodes
 2  1 child nodes
 3. 2 child nodes(Very complex)
+ie 
+1. If the node to be deleted is leaf node:
+	Make the respective link of the Parent node of the node being deleted None.
+2. If node to be deleted has one child
+	Replace the child node of the node being deleted with itself.
+3. If node to be deleted has 2 children
+	Make the right child of the node being deleted, the right child of its parent (Thus the right grand child become right child). The right child of the node being deleted replaces itself.
+	And the left child node (and its descendents(sub tree)) becomes the left child of the left most child of its right child.
+4. What is we are deleting the root itself (when it has 2 child nodes) ???
+---------------------------------------------------------------------------------------------------
+
+RECURSION : 
+
+
+RESUME BUILDING : 
+Vision : Short term goal }
+Mission : Long term goal }
+2 sentences each 
+Summary
+put things you are good add.
+neccessary : github : commit issues , branching
+the language 
+technology you know , DSA , project
+have your own website  (alt : Proofile.in ; native to linkedln)
+
+then for skills : (Make sure you are better at it than anyone else)
+    To do must and mostly enough : 
+    Language - any one deeply
+    DSA - around 9 sorting and 2 searching techniques are enough ; Stack , queue , tree , n queens , diskstras etc - Max 20 algos if we know 
+    Problem Solving ; recursive , backtracking , iterative etc 
+
+    Extra : Learn any tech thoroughly , like web dev , frontend with one framework 
+                    -Databses , any one database , mySQL and all RDBMS will be easily learnt
+                    and backend , express , node , flask , django etc , know all of them but one of them should be through

@@ -10,15 +10,6 @@
 	-> Recap about writing octal and hexadecimal numbers like 
 	0b10010 , 0xff, 0o78
 	
-Assignments 1: 
-	How is floating point number stored in memory ??? 1
-	Find out why there are no ++ and -- in python 
-	Check if a year is leap year
-	Check if a positive int is perfect square 
-	find smallest of 3 distinct numbers
-	Farmer problem 
-	taxation program
-
 -> *args means the function is capable of taking variable number of arguments 
 	it is a unmodifiable list , ie a tuple 
 
@@ -82,24 +73,4 @@ class list stores a set of fucntions utilized on lists, we call them as methods 
 
 
 
-Assignments 2:
-	In python we have modules , inside them we can have sub modules or .py files.
-	Which modules are automatically loaded/imported by ptyhon interpreter ? 
-	In which Module does print(), input() ,len() fucntions come from.
-	Learn about function call stack , and how recursion work based on that.
-	Learn about errors / exception handlings in python
-
-	Find smallest and Biggest elements in a list of n numbers
-	Find the frequency an element in a list of n elements.
-	Remove the duplicates in a list of size n
-*** Given the number , find very next possible bigger number that has all the digits of the given number 
-	Accept A number from the user(4-digit number , where the digit can repeat atmost two times) and print the count of recursions required to arrive at Karpekar's constant.
-	Recursion Questions :
-    	-Find Factorial of a number 
-    	-Print N fibo terms with 1 and 2 as 1st 2 terms
-    	-Find sum of list elements 
-Implement Stack using list, insert and delete from rear of the list
-Implement Stack using list, insert and delete from front of the list
-Implement Queue using list, insert at rear delete from front the list
-Implement Queue using list, insert front, delete from rear of the list
-	--All having push pop display invalid and exit functions 
+Cisco c++ , python institute certifications 

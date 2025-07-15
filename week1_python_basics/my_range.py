@@ -1,4 +1,4 @@
-#print a Square of n lines made up of @ char
+#Building a custom range function 
 def my_range (*args) :
     i = 1
     while i < len(args) :

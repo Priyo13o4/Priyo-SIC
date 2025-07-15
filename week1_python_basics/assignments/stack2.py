@@ -1,3 +1,4 @@
+#Stack with insertion & deletion from top
 import sys as s
 def push() : 
     ele = input()

@@ -1,0 +1,42 @@
+WEEK-2
+->What is pythonic and pep3
+->Name the ultimate parent class in python(And its important methods and data members)
+->What are the double underscore methods (functions)
+->how to define explicityl the main fucntion in python
+->Try to know as many methods of list and str classes as possible.
+->Why the command line Args are stored in a list and why not in tuple?
+->Take command line arguements (agvs)
+->What is Pythonic and pep ?
+DSA
+1. Implement Binary search using Recursion
+2. Print N terms of Fibo series using Recursion
+3. Find Sum of digits of a number using Recursion
+4. Optimized selection sort
+5. Derive the efficiency of Quick Sort for Best Case
+6. Find out, how we can create read only variable in Python
+
+$ python program2.py "meghalaya shillong" "manipur imphal" "mizoram aizal" "tripura agartala" "nagaland kohima"
+use string methods , formatting 
+states = []
+capitals = []
+
+State  capital
+-------------- 
+
+Linked List Problems:(Create using OOP/Class)
+1. Implement Queue using SLL and DLL, insert at rear delete from front
+2. Implement Stack using SLL, insert and delete from front
+3. Implement Stack using DLL, insert and delete from rear
+4. Reverse a SLL
+5. Merge 2 sorted SLLs into one sorted SLL
+6. Check if 2 SLL converges at some point or not
+7.make 8 fucntions for insert and delete at front , rear , postion , display f-r and r-f 
+    they made need checking if queue is empty (set that new node as head),if queue not empty 
+    for given postion we may need to check if that position exceeds the list or not 
+8.Implement circular queue using a list 
+9.Create a Matrix of (M, N) coordinates and print the Matrix in Spiral format
+
+
+
+
+

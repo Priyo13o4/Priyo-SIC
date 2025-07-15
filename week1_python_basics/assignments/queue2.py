@@ -1,3 +1,4 @@
+#Queue with insertion in back and deletion from front
 import sys as s
 def en_queue():
     ele = input()

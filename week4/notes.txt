@@ -1,0 +1,40 @@
+-> Pandas is an extension of numpy (Used more for numerical analysis) , used more on tabular data(organised data) operations.
+-> Some FILE HANDLING FILE
+    os.open - > Open/load the file from disc to main memory
+    os.read,write - > Read or write to the file
+    os.close -> Closing / saving the file from main memory(example when closing a word file without saving it prompts for saving , where the file is stored in cache) to disc.
+
+    this usually happens in C/C++ or java , in python pandas (pd.read) usually both opening and reading happens simultaneuosly 
+
+->
+------------------------------------------------------------------------------------------
+
+PROJECT DOCUMENTATION :
+
+Problem statement           (Abstract)
+Index
+Description                 (Detailed)
+Define the data within the problem, relevant info, O/P , purpose , outcome ,benefits etc.
+Plan 
+Design(Diagrams)
+Implementation
+Code & Explanation(Comments , definitions , explanation etc)
+O/P screenshots
+Closure ( Brief of the project)
+Bibliography
+
+Evaluation scheme : 
+Adequetness : 
+From POV of user , what are the features,analysis and how well they are defined 
+Coding practices : 
+    -multiple file project ( create folder hackathon in repo)
+
+what we can add more  : File handling , data handling , small GUI part(pyQT, tkinter , html) - These are very very optional 
+
+importance : 
+1. Code 
+2. OPPS
+3. Database / data /file in/op
+4. Menu (GUI)
+------------------------------------------------------------------------------------------
+
