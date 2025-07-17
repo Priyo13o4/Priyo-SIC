@@ -1,5 +1,0 @@
-matplotlib==3.10.3
-matplotlib-inline==0.1.7
-pandas==2.3.0a
-
-#All file paths are handled robustly; just keep the folder structure as provided.
